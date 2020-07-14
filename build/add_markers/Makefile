@@ -168,6 +168,21 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
+add_markers/CMakeFiles/old_add_markers.dir/rule:
+	cd /home/workspace/RoboND-Home-Service/build && $(MAKE) -f CMakeFiles/Makefile2 add_markers/CMakeFiles/old_add_markers.dir/rule
+.PHONY : add_markers/CMakeFiles/old_add_markers.dir/rule
+
+# Convenience name for target.
+old_add_markers: add_markers/CMakeFiles/old_add_markers.dir/rule
+
+.PHONY : old_add_markers
+
+# fast build rule for target.
+old_add_markers/fast:
+	cd /home/workspace/RoboND-Home-Service/build && $(MAKE) -f add_markers/CMakeFiles/old_add_markers.dir/build.make add_markers/CMakeFiles/old_add_markers.dir/build
+.PHONY : old_add_markers/fast
+
+# Convenience name for target.
 add_markers/CMakeFiles/geometry_msgs_generate_messages_py.dir/rule:
 	cd /home/workspace/RoboND-Home-Service/build && $(MAKE) -f CMakeFiles/Makefile2 add_markers/CMakeFiles/geometry_msgs_generate_messages_py.dir/rule
 .PHONY : add_markers/CMakeFiles/geometry_msgs_generate_messages_py.dir/rule
@@ -584,6 +599,33 @@ src/add_markers.cpp.s:
 	cd /home/workspace/RoboND-Home-Service/build && $(MAKE) -f add_markers/CMakeFiles/add_markers.dir/build.make add_markers/CMakeFiles/add_markers.dir/src/add_markers.cpp.s
 .PHONY : src/add_markers.cpp.s
 
+src/old_add_markers.o: src/old_add_markers.cpp.o
+
+.PHONY : src/old_add_markers.o
+
+# target to build an object file
+src/old_add_markers.cpp.o:
+	cd /home/workspace/RoboND-Home-Service/build && $(MAKE) -f add_markers/CMakeFiles/old_add_markers.dir/build.make add_markers/CMakeFiles/old_add_markers.dir/src/old_add_markers.cpp.o
+.PHONY : src/old_add_markers.cpp.o
+
+src/old_add_markers.i: src/old_add_markers.cpp.i
+
+.PHONY : src/old_add_markers.i
+
+# target to preprocess a source file
+src/old_add_markers.cpp.i:
+	cd /home/workspace/RoboND-Home-Service/build && $(MAKE) -f add_markers/CMakeFiles/old_add_markers.dir/build.make add_markers/CMakeFiles/old_add_markers.dir/src/old_add_markers.cpp.i
+.PHONY : src/old_add_markers.cpp.i
+
+src/old_add_markers.s: src/old_add_markers.cpp.s
+
+.PHONY : src/old_add_markers.s
+
+# target to generate assembly for a file
+src/old_add_markers.cpp.s:
+	cd /home/workspace/RoboND-Home-Service/build && $(MAKE) -f add_markers/CMakeFiles/old_add_markers.dir/build.make add_markers/CMakeFiles/old_add_markers.dir/src/old_add_markers.cpp.s
+.PHONY : src/old_add_markers.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -596,6 +638,7 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... test"
+	@echo "... old_add_markers"
 	@echo "... geometry_msgs_generate_messages_py"
 	@echo "... std_msgs_generate_messages_py"
 	@echo "... geometry_msgs_generate_messages_nodejs"
@@ -626,6 +669,9 @@ help:
 	@echo "... src/add_markers.o"
 	@echo "... src/add_markers.i"
 	@echo "... src/add_markers.s"
+	@echo "... src/old_add_markers.o"
+	@echo "... src/old_add_markers.i"
+	@echo "... src/old_add_markers.s"
 .PHONY : help
 
 
